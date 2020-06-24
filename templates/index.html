@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cupcakes</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/static/app.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="display-3">Cupcakes</h1>
+      <div id="container2">
+        <ul id="list"></ul>
+        <div class="container">
+          <form action="" id="cupcakeForm">
+            <div class="row form-group">
+              <div class="col-3 d-flex flex-row-reverse">
+                <label for="flavor">Flavor</label>
+              </div>
+              <div class="col">
+                <input type="text" name="flavor" id="flavor" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-3 d-flex flex-row-reverse">
+                <label for="size">Size</label>
+              </div>
+              <div class="col"><input type="text" name="size" id="size" /></div>
+            </div>
+            <div class="row form-group">
+              <div class="col-3 d-flex flex-row-reverse">
+                <label for="rating">Rating</label>
+              </div>
+              <div class="col">
+                <input type="text" name="rating" id="rating" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-3 d-flex flex-row-reverse">
+                <label for="image">Image</label>
+              </div>
+              <div class="col">
+                <input type="text" name="image" id="image" />
+              </div>
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-7">
+                <button>Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/static/app.js"></script>
+</html>
