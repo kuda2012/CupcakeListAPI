@@ -16,7 +16,7 @@ def connect_db(app):
 class Cupcake(db.Model):
 
     __tablename__ = "cupcakes"
-    id = db.Column(db.Integer, primary_key=True, auto_increment=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     flavor = db.Column(db.Text, nullable=False)
     size = db.Column(db.Text, nullable=False)
     rating = db.Column(db.Float, nullable=False)

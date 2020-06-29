@@ -1,16 +1,17 @@
 class Cupcake {
   constructor() {
-    this.Ul = $("#list");
+    this.container2 = $("#container2");
     this.Form = $("#cupcakeForm");
     this.createList();
     this.postCupcake();
+    this.Ul = $("<ul></ul>");
   }
 
   async createList() {
-    this.Ul.empty();
     let cupcakesJson = await axios.get("/api/cupcakes");
     let cupcakes = cupcakesJson.data.cupcakes;
-
+    this.Ul.empty();
+    this.container2.prepend(this.Ul);
     for (let cupcake of cupcakes) {
       let listItem = $("<li></li>");
       let cupcakeImg = $("<img>");
@@ -34,7 +35,7 @@ class Cupcake {
         image: $("#image").val(),
       });
       $("input").val("");
-      this.createListBound();
+      this.createList();
     });
   }
 }
